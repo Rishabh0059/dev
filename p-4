@@ -1,0 +1,44 @@
+P-4
+Write in powershell
+Status running 
+
+Create pod.yaml 
+Basic ngx
+
+Powershell->
+Kubectl apply -f pod.yaml
+Kubectl get pods 
+
+Kubectl get pods -o wide 
+
+Minukube ssh
+Curl add ip address 
+
+Repeat program 3-> make app
+
+Open docker
+
+Exit
+
+Docker build -t <username>/app1-k8s:latest .
+
+Docker push <username>/app1-k8s:latest
+
+Make deployment.yml and service.yml
+
+Kubectl apply -f deployment.yaml
+Kubectl apply -f service.yaml
+
+Kubectl get pods 
+Kubectl get svc
+
+Kubectl scale deployment/hw-deployment--replicas=3
+
+Change deployment.yaml
+Spec containers -> image -> username/app1: latest 
+
+Kubectl get deployment 
+Kubectl pods
+Kubectl port-forward svc/hw-service 5000:5000
+
+Then go to localhost:5000
