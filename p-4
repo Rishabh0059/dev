@@ -1,5 +1,9 @@
 P-4
 Write in powershell
+minikube start --driver=docker
+minikube status
+kubectl get nodes
+
 Status running 
 
 Create pod.yaml 
