@@ -1,0 +1,40 @@
+program -2 
+
+localhost:8080 -> tomcat
+manger app -> login , check in folder for password username
+
+jenkins -> localhost:8081
+copy till secrets and paste in file explorer
+get intialize password and paste in jenkins to signin
+
+manage jenkins -> tools -> maven installations -> add maven -> at name write "maven" and then apply and 
+save
+
+plugins -> deploy to container
+git server
+maven integration then install
+
+now open tomcat -> tomcat users -> copy robot and give password
+
+again in jenkins
+create new item
+give name and freestyle project
+
+source code management
+git
+repo->https://github.com/jatinsinghkatal/dpg2.git 
+
+scroll down
+environment->add timestamps to output
+
+build steps->invoke top level maven action
+maven version -> maven
+goals->clean install package
+post build action -> deploy war/ear files
+war/ear files ->  **/*.war ->2 stars slash star .war
+context path -> /app
+add container -> tomcat 9x
+credentials add jenkins->now add root username password
+then select robot
+give tomcat url
+apply save
