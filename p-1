@@ -1,0 +1,24 @@
+program -1
+
+open eclipse
+create new maven project
+filter- maven-archetype-quickstart
+group id-ToolsQA
+artificat id - SampleMavenProject
+finish
+
+src/main/java -> toolsQa -> create new class -> MyApp
+src/test/java -> toolsQa ->create new class->MyAppTest
+src->main->create new folder resources->config.properties
+pom.xml -> add dependency at 2nd at last
+
+marketplace->testng
+
+right click pom.xml -> update project
+pom.xml->run as maven build->clean install package
+
+right click at left side
+properties->move to path
+cmd
+gradle init
+gradle build
