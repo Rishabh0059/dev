@@ -7,8 +7,6 @@ Basic ngx
 
 Powershell->
 Kubectl apply -f pod.yaml
-Kubectl get pods 
-
 Kubectl get pods -o wide 
 
 Minukube ssh
@@ -38,7 +36,7 @@ Change deployment.yaml
 Spec containers -> image -> username/app1: latest 
 
 Kubectl get deployment 
-Kubectl pods
+Kubectl get pods
 Kubectl port-forward svc/hw-service 5000:5000
 
 Then go to localhost:5000
